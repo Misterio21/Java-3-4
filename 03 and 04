@@ -1,0 +1,93 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication2;
+
+/**
+ *
+ * @author tomch
+ */
+public class JavaApplication2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int money = 459;
+        final int HUNDRED = 100;
+        final int FIFTY = 50;
+        final int TWENTY = 20;
+        final int TEN = 10;
+        final int FIVE = 5;
+        final int TWO = 2;
+        
+        int hundreds, fiftys, twentys, tens, fives, twos, ones, helper;
+        helper = money;
+        hundreds = money/HUNDRED;
+        if (hundreds != 0) {
+            helper = money%(hundreds*HUNDRED);       
+        }
+        fiftys = helper/FIFTY;
+        if (fiftys != 0) {
+            helper = helper%(fiftys*FIFTY);       
+        }
+        twentys = helper/TWENTY;
+        if (twentys != 0) {
+           helper = helper%(twentys*TWENTY);         
+        }
+        tens = helper/TEN;
+        if (tens != 0) {
+           helper = helper%(tens*TEN);       
+        }
+        fives = helper/FIVE;
+        if (fives != 0) {
+           helper = helper%(fives*FIVE);      
+        }
+        twos = helper/TWO;
+        if (twos != 0) {
+           helper = helper%(twos*TWO);     
+        }
+        ones = helper;
+        System.out.println(hundreds + " " + fiftys + " " + twentys + " " + tens + " " + fives + " " + twos + " " + ones);
+    }
+    
+}
+
+
+
+
+
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication2;
+
+/**
+ *
+ * @author tomch
+ */
+public class anotherone {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        String number = "020121/1651";
+        
+        char year1 = number.charAt(0);
+        char year2 = number.charAt(1);
+        char month1 = number.charAt(2);
+        char month2 = number.charAt(3);
+        char day1 = number.charAt(4);
+        char day2 = number.charAt(5);
+        
+        System.out.println(day1 + "" + day2 + " " + month1 + "" + month2 + " " + year1 + "" + year2);
+    }
+    
+}
